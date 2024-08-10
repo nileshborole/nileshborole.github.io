@@ -5,102 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Nilesh Borole</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
         }
+
         .container {
-            max-width: 1000px;
-            margin: 20px auto;
+            max-width: 900px;
+            margin: 30px auto;
             padding: 20px;
             background-color: #fff;
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
+
         header {
             text-align: center;
-            background-color: #4CAF50;
+            background-color: #2C3E50;
             color: white;
             padding: 20px 0;
             border-radius: 10px 10px 0 0;
         }
+
         header h1 {
             margin: 0;
             font-size: 2.5em;
+            font-weight: 700;
         }
+
         nav {
             text-align: center;
             margin: 20px 0;
         }
+
         nav a {
             text-decoration: none;
-            color: #4CAF50;
+            color: #2C3E50;
             margin: 0 15px;
-            font-weight: bold;
-            font-size: 1.2em;
+            font-weight: 500;
+            font-size: 1.1em;
         }
+
         section {
             margin: 20px 0;
             padding: 20px;
             border-radius: 10px;
         }
+
         section h2 {
             margin-top: 0;
+            font-weight: 500;
+            font-size: 1.6em;
         }
+
         .career-objective {
-            background-color: #FFEB3B;
+            background-color: #F0F4C3;
         }
+
         .technical-skills {
-            background-color: #FF7043;
-            color: white;
+            background-color: #FFCC80;
         }
+
         .work-experience {
-            background-color: #42A5F5;
-            color: white;
+            background-color: #BBDEFB;
         }
+
         .education {
-            background-color: #AB47BC;
-            color: white;
+            background-color: #D1C4E9;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            padding: 5px 0;
-        }
-        .skills ul, .experience ul {
-            padding-left: 20px;
-        }
-        .infographic {
+
+        .skills-graph {
             display: flex;
-            justify-content: space-between;
-            text-align: center;
-            margin: 20px 0;
+            flex-direction: column;
+            gap: 10px;
         }
-        .infographic div {
+
+        .skills-graph div {
+            display: flex;
+            align-items: center;
+        }
+
+        .skill-label {
+            width: 150px;
+            font-weight: 500;
+            margin-right: 10px;
+        }
+
+        .skill-bar {
             flex: 1;
-            padding: 10px;
-            margin: 5px;
+            height: 20px;
+            background-color: #e0e0e0;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background-color: #f0f0f0;
+            position: relative;
+            overflow: hidden;
         }
-        .infographic div p {
-            margin: 10px 0 0;
+
+        .skill-level {
+            height: 100%;
+            background-color: #2C3E50;
+            border-radius: 10px;
+            position: absolute;
+            left: 0;
+            top: 0;
         }
+
+        .experience ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
         footer {
             text-align: center;
             padding: 10px 0;
-            background-color: #4CAF50;
+            background-color: #2C3E50;
             color: white;
             border-radius: 0 0 10px 10px;
-        }
-        footer p {
-            margin: 0;
         }
     </style>
 </head>
@@ -127,32 +151,48 @@
 
     <section id="technical-skills" class="technical-skills">
         <h2>Technical Skills</h2>
-        <div class="infographic">
+        <div class="skills-graph">
             <div>
-                <h3>Languages</h3>
-                <p>Java, Hacklang/PHP, J2EE, SQL</p>
+                <span class="skill-label">Java</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 95%;"></div>
+                </div>
             </div>
             <div>
-                <h3>Web Development</h3>
-                <p>Angular JS, Bootstrap, NodeJS</p>
+                <span class="skill-label">Hacklang/PHP</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%;"></div>
+                </div>
             </div>
             <div>
-                <h3>Framework</h3>
-                <p>Eclipse Vert.x, MyBatis, Spring, Spring Boot</p>
-            </div>
-        </div>
-        <div class="infographic">
-            <div>
-                <h3>Monitoring Tools</h3>
-                <p>NewRelic, AWS CloudWatch, Loggly, ELK</p>
+                <span class="skill-label">Angular JS</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%;"></div>
+                </div>
             </div>
             <div>
-                <h3>Databases</h3>
-                <p>MySQL, Oracle 11g, Redis, MongoDB</p>
+                <span class="skill-label">Spring Boot</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%;"></div>
+                </div>
             </div>
             <div>
-                <h3>Other</h3>
-                <p>Reactive Programming, AWS Cloud, Docker, Flutter</p>
+                <span class="skill-label">MySQL</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div>
+                <span class="skill-label">AWS Cloud</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div>
+                <span class="skill-label">Docker</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 70%;"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -182,9 +222,6 @@
                 <li>Designed scalable 'Wallet Service' for high throughput (100k writes RPS).</li>
                 <li>Developed reactive framework for microservices, improving performance.</li>
             </ul>
-
-            <!-- Additional work experience entries can go here -->
-
         </div>
     </section>
 
