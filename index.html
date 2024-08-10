@@ -3,179 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nilesh Borole - Resume</title>
+    <title>Resume - Nilesh Borole</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            background-color: #f4f4f4;
+            color: #333;
             margin: 0;
-            padding: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
         }
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            max-width: 800px;
+            margin: 0 auto;
             background: #fff;
             padding: 20px;
+            border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        header {
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #444;
         }
-        header h1 {
+        h2 {
+            border-bottom: 2px solid #e5e5e5;
+            padding-bottom: 5px;
+            color: #444;
+        }
+        p {
             margin: 0;
-            color: #333;
-        }
-        .contact-info {
-            margin-top: 10px;
-        }
-        .contact-info p {
-            margin: 5px 0;
-        }
-        section {
-            margin: 20px 0;
-        }
-        section h2 {
-            background: #333;
-            color: #fff;
-            padding: 5px;
+            padding: 5px 0;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         ul li {
-            margin: 10px 0;
+            padding: 5px 0;
+        }
+        .contact-info, .education {
+            display: flex;
+            justify-content: space-between;
+        }
+        .education ul, .experience ul, .skills ul {
+            margin-left: 20px;
+        }
+        .experience h3 {
+            margin: 10px 0 5px;
+        }
+        .experience p {
+            font-style: italic;
+            color: #666;
+        }
+        .skills ul li, .experience ul li {
+            padding: 2px 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>NILESH BOROLE</h1>
-            <div class="contact-info">
-                <p>Email: nilesh30490@gmail.com | Mobile: +91-9967213720</p>
-                <p>Location: Pune</p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/nborole" target="_blank">https://www.linkedin.com/in/nborole</a></p>
+        <h1>NILESH BOROLE</h1>
+        <div class="contact-info">
+            <div>
+                <p>Email: <a href="mailto:nilesh30490@gmail.com">nilesh30490@gmail.com</a></p>
+                <p>Location: Pune, India</p>
             </div>
-        </header>
+            <div>
+                <p>Mobile: +91-9967213720</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/nborole" target="_blank">linkedin.com/in/nborole</a></p>
+            </div>
+        </div>
 
-        <section>
-            <h2>Career Objective</h2>
-            <p>To obtain a position that would develop my software development & leadership skills on the subject providing adequate experience in the line. I would like to work amongst a network of skilled professionals in a dynamic and highly demanding atmosphere where I can contribute to the growth of the organization.</p>
-        </section>
+        <h2>Career Objective</h2>
+        <p>Seeking a leadership role melding technical expertise for organizational growth, merging hands-on development with team leadership. 12+ years of experience in building and scaling apps, aiming for an architectural position to guide a tech team towards company goals.</p>
 
-        <section>
-            <h2>Professional Summary</h2>
-            <p>8+ years of experience in architecting and development of highly scalable, performance-efficient and distributed applications. Love to get my hands dirty with new technology.</p>
-        </section>
+        <h2>Technical Skills</h2>
+        <ul class="skills">
+            <li><strong>Languages:</strong> Java, Hacklang/PHP, J2EE, SQL.</li>
+            <li><strong>Web Development:</strong> Angular JS, Bootstrap, NodeJS.</li>
+            <li><strong>Framework:</strong> Eclipse Vert.x, MyBatis, Spring, Spring Boot.</li>
+            <li><strong>Monitoring Tools:</strong> NewRelic, AWS CloudWatch, Loggly, ELK.</li>
+            <li><strong>Relational Databases:</strong> MySQL Server 5.0, Oracle 11g.</li>
+            <li><strong>NoSQL & NewSQL:</strong> VoltDB, Redis(Clustered), Apache Ignite, Apache HBase, MongoDB, Apache Hadoop, Apache Phoenix, Vitess.</li>
+            <li><strong>Java Build Tools:</strong> Apache Maven.</li>
+            <li><strong>Other:</strong> Reactive Programming, AWS Cloud, Docker, Flutter.</li>
+        </ul>
 
-        <section>
-            <h2>Technical Skills</h2>
+        <h2>Work Experience (12+ Years)</h2>
+        <div class="experience">
+            <h3>Slack (Acquired by Salesforce) as Principal Software Engineer (PMTS)</h3>
+            <p>Oct 2021 - Present</p>
             <ul>
-                <li><strong>Languages:</strong> JAVA, J2EE, SQL.</li>
-                <li><strong>Web Development:</strong> Angular JS, Bootstrap, NodeJS.</li>
-                <li><strong>Framework:</strong> Eclipse Vert.x, MyBatis, Spring, Spring Boot.</li>
-                <li><strong>Monitoring Tools:</strong> NewRelic, AWS CloudWatch, Loggly, ELK.</li>
-                <li><strong>Relational Databases:</strong> MySQL Server 5.0, Oracle 11g.</li>
-                <li><strong>NoSQL & NewSQL:</strong> VoltDB, Redis(Clustered), Apache Ignite, Apache HBase, MongoDB, Apache Hadoop, Apache Phoenix.</li>
-                <li><strong>Java Build Tools:</strong> Apache Maven.</li>
-                <li><strong>Other:</strong> Reactive Programming, AWS Cloud, JUnit, Shell Script, Git, Flutter.</li>
+                <li>Architected the Slack AI add-on provisioning flow for enterprise customers.</li>
+                <li>Led an enterprise provisioning automation project, resulting in a 30% revenue growth.</li>
+                <li>Optimized the fair billing module, reducing calculation time by 8x for billions of users.</li>
+                <li>Enhanced Slackfill architecture, enabling monitoring & alerting for distributed job execution.</li>
             </ul>
-        </section>
 
-        <section>
-            <h2>Qualification</h2>
+            <h3>DebugsBunny as Co-Founder & CTO</h3>
+            <p>Mar 2020 - Sep 2021</p>
             <ul>
-                <li>Bachelor of Engineering in Information Technology from Fr. Conceicao Rodrigues Institute of Technology, Vashi Affiliated to Mumbai University- 63.7% (2011).</li>
-                <li>Passed 12th (HSC), from Birla College of Arts, Commerce and Science, Kalyan (2007) - 82%.</li>
-                <li>Passed 10th (SSC), from Captain Ravindra Madhav Oak High School, Kalyan (2005)-81.73%.</li>
+                <li>Led the technology team to create the MVP and guide platform architecture.</li>
+                <li>Developed Java backend and Flutter-based Android app for the platform.</li>
+                <li>Collaborated across teams to gather requirements and assess feature feasibility.</li>
             </ul>
-        </section>
 
-        <section>
-            <h2>Work Experience (8.8 Years)</h2>
+            <h3>Dream11 as Platform Architect</h3>
+            <p>Dec 2017 - Feb 2020</p>
             <ul>
-                <li>
-                    <strong>DebugsBunny</strong> - Co-Founder (Oct 2020 to Present)
-                    <ul>
-                        <li>Build the initial MVP to test product market fit.</li>
-                        <li>Guide team to decide tech stack and architecture.</li>
-                        <li>Java Developer and Mobile Application Developer using Flutter.</li>
-                        <li>Involved in discussion with teacher, content, and sales team to understand feature requirements and drive product development.</li>
-                        <li>Assess the feasibility of features from implementation point of view.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>PhonePe</strong> - Senior Software Engineer (MTS) (April 2020 to Oct 2020)
-                    <ul>
-                        <li>Designed and implemented recharge view plan architecture.</li>
-                        <li>Implemented third-party integration framework for seamless integration with the recharge operator.</li>
-                        <li>Implemented a CRUD repository framework for ElasticSearch.</li>
-                        <li>Led tech design discussions and guided team members in solving tech problems.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Dream11</strong> - Software Development Engineer-II (Platform Architect) (Dec 2017 to Feb. 2020)
-                    <ul>
-                        <li>Architected and implemented the highly scalable 'Contest Service'.</li>
-                        <li>Designed and implemented a reactive framework using Eclipse Vert.x.</li>
-                        <li>Led the architecture and implementation of 'Wallet Service'.</li>
-                        <li>Designed and implemented 'Join Contest using Queue' feature.</li>
-                        <li>Architected and implemented 'Fantasy Tour' and 'Contest Personalization' services.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Interactive Brokers</strong> - Software Engineer (July 2016 to Dec 2017)
-                    <ul>
-                        <li>Designed and implemented a wire deposit processor framework.</li>
-                        <li>Designed and implemented a configurable file parser for bank statements.</li>
-                        <li>Developed a configurable report framework.</li>
-                        <li>Implemented surveillance report for clearing system using a generic report framework.</li>
-                        <li>Designed and implemented a batch request processor and journal report notes process.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>MedStudio Pvt. Ltd.</strong> - Tech Lead (Feb. 2015 to July 2016)
-                    <ul>
-                        <li>Delivered end-to-end features for SFE.</li>
-                        <li>Developed dynamic report features with graphs.</li>
-                        <li>Designed and delivered Scheduler framework using Quartz Scheduler.</li>
-                        <li>Developed and delivered mobile app for SFE using Ionic framework.</li>
-                        <li>Addressed production issues and maintained production server.</li>
-                        <li>Guided team members and conducted code reviews.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Zycus Infotech Pvt. Ltd.</strong> - Associate Tech Lead (Sept. 2013 to Jan 2015)
-                    <ul>
-                        <li>Configured and maintained Apache Hadoop, Apache HBase, and HBase cluster.</li>
-                        <li>Developed Data layer and Query Builder for Apache Phoenix.</li>
-                        <li>Implemented Apache HBase Query module.</li>
-                        <li>Implemented MongoDB map-reduce module for data processing.</li>
-                        <li>Handled production and integration issues, and fixed bugs on priority.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Indian Research & Consultancy Center (IRCC), IIT-Bombay</strong> - Project Assistant (Nov. 2012 to Sept. 2013)
-                    <ul>
-                        <li>Developed Route Information System for B.E.S.T (Mumbai) bus routes.</li>
-                        <li>Developed GPS based Real-Time Transit Trip Planner.</li>
-                        <li>Implemented GPS Data receiver interface and filters.</li>
-                        <li>Performed Load Testing using Jmeter.</li>
-                        <li>Published research paper in CTRG conference.</li>
-                    </ul>
-                </li>
+                <li>Architected and led 'Contest Service', boosting write/read throughput by 10x.</li>
+                <li>Designed and implemented 'Wallet Service' for high throughput (100k writes RPS).</li>
+                <li>Developed a reactive framework with Eclipse Vert.x, enhancing microservices performance.</li>
             </ul>
-        </section>
 
-        <section>
-            <h2>Declaration</h2>
-            <p>I do hereby declare that the particulars of information and facts stated herein above are true, correct, and complete to the best of my knowledge and belief.</p>
-            <p><strong>NILESH ASHOK BOROLE</strong></p>
-        </section>
+            <h3>Interactive Brokers as Software Engineer</h3>
+            <p>Jul 2016 - Dec 2017</p>
+
+            <h3>MedStudio Pvt. Ltd. as Tech Lead</h3>
+            <p>Feb 2015 - Jul 2016</p>
+
+            <h3>Zycus Infotech Pvt. Ltd. as Associate Tech Lead</h3>
+            <p>Sep 2013 - Jan 2015</p>
+
+            <h3>Indian Research & Consultancy Center (IRCC), IIT-Bombay as Project Assistant</h3>
+            <p>Nov 2012 - Sep 2013</p>
+
+            <h3>L&T Infotech as Software Test Engineer</h3>
+            <p>Aug 2011 - Oct 2012</p>
+        </div>
+
+        <h2>Education</h2>
+        <div class="education">
+            <ul>
+                <li>Bachelor of Engineering in Information Technology - Fr. Conceicao Rodrigues Institute of Technology, Vashi (63.7%)</li>
+                <li>12th (HSC) - Birla College of Arts, Commerce and Science, Kalyan (82%)</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
