@@ -6,34 +6,64 @@
     <title>Resume - Nilesh Borole</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
+            max-width: 1000px;
+            margin: 20px auto;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
-        h1 {
+        header {
             text-align: center;
-            font-size: 2.5em;
-            color: #444;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            border-radius: 10px 10px 0 0;
         }
-        h2 {
-            border-bottom: 2px solid #e5e5e5;
-            padding-bottom: 5px;
-            color: #444;
-        }
-        p {
+        header h1 {
             margin: 0;
-            padding: 5px 0;
+            font-size: 2.5em;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #4CAF50;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        section h2 {
+            margin-top: 0;
+        }
+        .career-objective {
+            background-color: #FFEB3B;
+        }
+        .technical-skills {
+            background-color: #FF7043;
+            color: white;
+        }
+        .work-experience {
+            background-color: #42A5F5;
+            color: white;
+        }
+        .education {
+            background-color: #AB47BC;
+            color: white;
         }
         ul {
             list-style-type: none;
@@ -42,104 +72,134 @@
         ul li {
             padding: 5px 0;
         }
-        .contact-info, .education {
+        .skills ul, .experience ul {
+            padding-left: 20px;
+        }
+        .infographic {
             display: flex;
             justify-content: space-between;
+            text-align: center;
+            margin: 20px 0;
         }
-        .education ul, .experience ul, .skills ul {
-            margin-left: 20px;
+        .infographic div {
+            flex: 1;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f0f0f0;
         }
-        .experience h3 {
-            margin: 10px 0 5px;
+        .infographic div p {
+            margin: 10px 0 0;
         }
-        .experience p {
-            font-style: italic;
-            color: #666;
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 0 0 10px 10px;
         }
-        .skills ul li, .experience ul li {
-            padding: 2px 0;
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>NILESH BOROLE</h1>
-        <div class="contact-info">
-            <div>
-                <p>Email: <a href="mailto:nilesh30490@gmail.com">nilesh30490@gmail.com</a></p>
-                <p>Location: Pune, India</p>
-            </div>
-            <div>
-                <p>Mobile: +91-9967213720</p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/nborole" target="_blank">linkedin.com/in/nborole</a></p>
-            </div>
-        </div>
 
+<div class="container">
+    <header>
+        <h1>NILESH BOROLE</h1>
+        <p>Email: <a href="mailto:nilesh30490@gmail.com" style="color: white;">nilesh30490@gmail.com</a> | Mobile: +91-9967213720 | Location: Pune, India</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/nborole" target="_blank" style="color: white;">linkedin.com/in/nborole</a></p>
+    </header>
+
+    <nav>
+        <a href="#career-objective">Career Objective</a>
+        <a href="#technical-skills">Technical Skills</a>
+        <a href="#work-experience">Work Experience</a>
+        <a href="#education">Education</a>
+    </nav>
+
+    <section id="career-objective" class="career-objective">
         <h2>Career Objective</h2>
         <p>Seeking a leadership role melding technical expertise for organizational growth, merging hands-on development with team leadership. 12+ years of experience in building and scaling apps, aiming for an architectural position to guide a tech team towards company goals.</p>
+    </section>
 
+    <section id="technical-skills" class="technical-skills">
         <h2>Technical Skills</h2>
-        <ul class="skills">
-            <li><strong>Languages:</strong> Java, Hacklang/PHP, J2EE, SQL.</li>
-            <li><strong>Web Development:</strong> Angular JS, Bootstrap, NodeJS.</li>
-            <li><strong>Framework:</strong> Eclipse Vert.x, MyBatis, Spring, Spring Boot.</li>
-            <li><strong>Monitoring Tools:</strong> NewRelic, AWS CloudWatch, Loggly, ELK.</li>
-            <li><strong>Relational Databases:</strong> MySQL Server 5.0, Oracle 11g.</li>
-            <li><strong>NoSQL & NewSQL:</strong> VoltDB, Redis(Clustered), Apache Ignite, Apache HBase, MongoDB, Apache Hadoop, Apache Phoenix, Vitess.</li>
-            <li><strong>Java Build Tools:</strong> Apache Maven.</li>
-            <li><strong>Other:</strong> Reactive Programming, AWS Cloud, Docker, Flutter.</li>
-        </ul>
+        <div class="infographic">
+            <div>
+                <h3>Languages</h3>
+                <p>Java, Hacklang/PHP, J2EE, SQL</p>
+            </div>
+            <div>
+                <h3>Web Development</h3>
+                <p>Angular JS, Bootstrap, NodeJS</p>
+            </div>
+            <div>
+                <h3>Framework</h3>
+                <p>Eclipse Vert.x, MyBatis, Spring, Spring Boot</p>
+            </div>
+        </div>
+        <div class="infographic">
+            <div>
+                <h3>Monitoring Tools</h3>
+                <p>NewRelic, AWS CloudWatch, Loggly, ELK</p>
+            </div>
+            <div>
+                <h3>Databases</h3>
+                <p>MySQL, Oracle 11g, Redis, MongoDB</p>
+            </div>
+            <div>
+                <h3>Other</h3>
+                <p>Reactive Programming, AWS Cloud, Docker, Flutter</p>
+            </div>
+        </div>
+    </section>
 
-        <h2>Work Experience (12+ Years)</h2>
+    <section id="work-experience" class="work-experience">
+        <h2>Work Experience</h2>
         <div class="experience">
-            <h3>Slack (Acquired by Salesforce) as Principal Software Engineer (PMTS)</h3>
+            <h3>Slack (Principal Software Engineer)</h3>
             <p>Oct 2021 - Present</p>
             <ul>
-                <li>Architected the Slack AI add-on provisioning flow for enterprise customers.</li>
-                <li>Led an enterprise provisioning automation project, resulting in a 30% revenue growth.</li>
-                <li>Optimized the fair billing module, reducing calculation time by 8x for billions of users.</li>
-                <li>Enhanced Slackfill architecture, enabling monitoring & alerting for distributed job execution.</li>
+                <li>Architected Slack AI add-on provisioning for enterprise customers.</li>
+                <li>Led enterprise provisioning automation project; resulted in 30% revenue growth.</li>
+                <li>Optimized billing module, reducing calculation time by 8x.</li>
             </ul>
 
-            <h3>DebugsBunny as Co-Founder & CTO</h3>
+            <h3>DebugsBunny (Co-Founder & CTO)</h3>
             <p>Mar 2020 - Sep 2021</p>
             <ul>
-                <li>Led the technology team to create the MVP and guide platform architecture.</li>
-                <li>Developed Java backend and Flutter-based Android app for the platform.</li>
-                <li>Collaborated across teams to gather requirements and assess feature feasibility.</li>
+                <li>Led technology team for MVP creation and architecture guidance.</li>
+                <li>Developed Java backend and Flutter-based Android app.</li>
             </ul>
 
-            <h3>Dream11 as Platform Architect</h3>
+            <h3>Dream11 (Platform Architect)</h3>
             <p>Dec 2017 - Feb 2020</p>
             <ul>
-                <li>Architected and led 'Contest Service', boosting write/read throughput by 10x.</li>
-                <li>Designed and implemented 'Wallet Service' for high throughput (100k writes RPS).</li>
-                <li>Developed a reactive framework with Eclipse Vert.x, enhancing microservices performance.</li>
+                <li>Architected 'Contest Service', increasing write/read throughput by 10x.</li>
+                <li>Designed scalable 'Wallet Service' for high throughput (100k writes RPS).</li>
+                <li>Developed reactive framework for microservices, improving performance.</li>
             </ul>
 
-            <h3>Interactive Brokers as Software Engineer</h3>
-            <p>Jul 2016 - Dec 2017</p>
+            <!-- Additional work experience entries can go here -->
 
-            <h3>MedStudio Pvt. Ltd. as Tech Lead</h3>
-            <p>Feb 2015 - Jul 2016</p>
-
-            <h3>Zycus Infotech Pvt. Ltd. as Associate Tech Lead</h3>
-            <p>Sep 2013 - Jan 2015</p>
-
-            <h3>Indian Research & Consultancy Center (IRCC), IIT-Bombay as Project Assistant</h3>
-            <p>Nov 2012 - Sep 2013</p>
-
-            <h3>L&T Infotech as Software Test Engineer</h3>
-            <p>Aug 2011 - Oct 2012</p>
         </div>
+    </section>
 
+    <section id="education" class="education">
         <h2>Education</h2>
-        <div class="education">
-            <ul>
-                <li>Bachelor of Engineering in Information Technology - Fr. Conceicao Rodrigues Institute of Technology, Vashi (63.7%)</li>
-                <li>12th (HSC) - Birla College of Arts, Commerce and Science, Kalyan (82%)</li>
-            </ul>
-        </div>
-    </div>
+        <ul>
+            <li>Bachelor of Engineering in Information Technology, Fr. Conceicao Rodrigues Institute of Technology, Vashi (63.7%)</li>
+            <li>12th (HSC), Birla College of Arts, Commerce and Science, Kalyan (82%)</li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Nilesh Borole</p>
+</footer>
+
 </body>
 </html>
