@@ -310,7 +310,7 @@ export default function HomePage() {
       {/* PUBLICATIONS */}
       <motion.section id="publications" className="max-w-5xl mx-auto px-6 py-18" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 0.6 }} variants={{ hidden: { opacity: 0, y: 40 }, visible: { opacity: 1, y: 0 } }}>
         <h2 className="text-3xl font-semibold mb-4">Publications</h2>
-        <a href="https://github.com/nileshborole" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400">
+        <a href="https://www.sciencedirect.com/science/article/pii/S1877042813045631" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400">
           Multimodal Public Transit Trip Planner with Real-time Transit Data
         </a>
       </motion.section>
