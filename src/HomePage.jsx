@@ -39,8 +39,8 @@ export default function HomePage() {
 
   const experiences = [
     {
-      role: "Principal Member of Technical Staff",
-      company: "Slack",
+      role: "Staff Software Engineer",
+      company: "Slack (Acquired by Salesforce)",
       period: "Oct 2021 – Present",
       summary: "",
       responsibilities: [
@@ -195,7 +195,7 @@ export default function HomePage() {
           </table>
           </div>
           <p className="text-lg md:text-2xl text-gray-400 max-w-2xl mb-10">
-            Principal Software Engineer at Slack | 13+ years of experience in building high-scale distributed systems
+            Staff Software Engineer at Slack | 14 years of experience in building high-scale distributed systems
           </p>
           <div className="flex flex-wrap gap-4 text-gray-300">
             <a href="mailto:nilesh30490@gmail.com" className="hover:text-white flex items-center gap-2">
